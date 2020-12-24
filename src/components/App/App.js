@@ -15,15 +15,36 @@ class App extends React.Component {
   constructor(props){
     super(props);
     
+    class App extends React.Component {
+      constructor(props){
+        super(props);
+        this.state = {
+          menuDisplayed: false,
+          active: true,
+        }
+        this.displayMenu = this.displayMenu.bind(this);
+        
+      }
+      
+        displayMenu(event){
+          this.setState( prevState => {
+            return {
+              menuDisplayed: !prevState.menuDisplayed,
+              active: !prevState.active,
+            }
+          })
+        }
+    
+
+
   render() {
    
-
     console.log(this.state);
     return (
       <div className="App">
           <BrowserRouter>
                 <Sakura></Sakura>
-                <Header displayMenu={this.displayMenu} active={this.state.active} toggleMenuIcon={this.toggleMenuIcon} menuDisplayed={this.state.menuDisplayed}></Header>
+                <Header displayMenu={this.displayMenu} active={this.state.active}  menuDisplayed={this.state.menuDisplayed}></Header>
                 <main>
                   <AboutMe ></AboutMe>
                   <Projects showDetailsModalMenu={this.showDetailsModalMenu} detailsModalShow={this.state.detailsModalShow}  projectsData={this.state.projectsData}></Projects>
