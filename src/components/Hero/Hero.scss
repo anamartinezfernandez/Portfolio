@@ -1,0 +1,29 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  height: 100vh;
+  padding: 35px;
+
+    &__title, &__subtitle{
+      font-family: "Roboto Slab", serif;
+      font-family: 'Poiret One', cursive;
+      font-size: 26px;
+      margin: 0px;
+      line-height: 44px;
+      color: $primaryColor;
+    
+      @media all and (min-width: 768px) {
+        font-size: 40px;
+        line-height: 64px;
+      }
+      @media all and (min-width:1280px){
+        font-size: 50px;
+      }
+    }
+  }
+  
+.display{
+  display:none;
+}
