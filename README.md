@@ -1,0 +1,2 @@
+- Proptypes-
+Limpiar código

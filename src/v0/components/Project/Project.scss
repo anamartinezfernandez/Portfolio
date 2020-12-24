@@ -1,0 +1,46 @@
+//mirar la fuente y tamaño
+
+.project{
+ 
+    &__img{
+        width: 100%;
+        height: 100%;
+        
+         &--container{
+            width: 100%;
+            height: 80%;
+            padding: 8px;
+            margin-bottom: 3px;
+        }
+    }
+    &__info{
+        &--container{
+            margin-bottom: 10px;
+        }
+        &--title{
+            font-family: "Roboto Slab", serif;
+            font-size: 14px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+        &--skillsList{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        
+         
+            &-item{
+                list-style: none;
+                color: $primaryColor;
+
+                font-family: "Roboto Slab", serif;
+              
+            }
+        }
+        
+    }
+}
+
+
+
+//poner transición hower

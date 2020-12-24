@@ -1,0 +1,41 @@
+@import "../../stylesheet/variables.scss";
+@import "../../stylesheet/reset.scss";
+@import "../../stylesheet/index.scss";
+@import "../../components/Header/Header.scss";
+@import "../../components/AboutMe/AboutMe.scss";
+@import "../../components/HeaderMenu/HeaderMenu.scss";
+@import "../../components/SakuraBackground/Sakura.scss";
+@import "../../components/Projects/Projects.scss";
+@import "../../components/Project/Project.scss";
+
+@import "../../components/Footer/Footer.scss";
+@import "../../components/ModalFunctional/ModalFunctional.scss";
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    padding: 35px;
+    }
+    
+    .display{
+    display:none;
+    }
+    .title, .subtitle{
+      font-family: "Roboto Slab", serif;
+      font-size: 30px;
+      margin: 0px;
+      line-height: 44px;
+      color: $primaryColor;
+    
+      @media all and (min-width: 768px) {
+        font-size: 40px;
+        line-height: 64px;
+       
+      }
+      @media all and (min-width:1280px){
+        font-size: 50px;
+      }
+    
+    }
