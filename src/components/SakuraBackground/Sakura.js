@@ -617,7 +617,7 @@ class Sakura extends React.Component  {
       pointFlower.fader = Vector3.create(0.0, 10.0, 0.0);
 
       // paramerters: velocity[3], rotate[3]
-      pointFlower.numFlowers = 1600;
+      pointFlower.numFlowers = 1000; //antes 1600
       pointFlower.particles = new Array(pointFlower.numFlowers);
       // vertex attributes {position[3], euler_xyz[3], size[1]}
       pointFlower.dataArray = new Float32Array(
@@ -663,7 +663,7 @@ class Sakura extends React.Component  {
         tmpv3.y = symmetryrand() * 0.2 - 1.0;
         tmpv3.z = symmetryrand() * 0.3 + 0.5;
         Vector3.normalize(tmpv3);
-        tmpv = 2.0 + Math.random() * 1.0;
+        tmpv = 1.0 + Math.random() * 1.0; //antes 2.0
         tmpprtcl.setVelocity(tmpv3.x * tmpv, tmpv3.y * tmpv, tmpv3.z * tmpv);
 
         //rotation

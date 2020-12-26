@@ -5,27 +5,59 @@ import Header from "../Header/Header";
 import AboutMe from "../AboutMe/AboutMe";
 import Footer from "../Footer/Footer";
 import Projects from "../Projects/Projects";
-
+import Data from "../../services/Data";
 import ModalFunctional from "../ModalFunctional/ModalFunctional";
 import ProjectDetailsModal from "../ProjectDetailsModal/ProjectDetailsModal";
 import { BrowserRouter } from "react-router-dom/cjs/react-router-dom.min";
 
 
-class App extends React.Component {
-  constructor(props){
-    super(props);
-    
     class App extends React.Component {
       constructor(props){
         super(props);
         this.state = {
           menuDisplayed: false,
-          active: true,
+          active: true,projectsData: Data,
+          detailsModalShow: false,
+          detailsProjectClicked: {}
         }
         this.displayMenu = this.displayMenu.bind(this);
-        
+        this.showDetailsModalMenu = this.showDetailsModalMenu.bind(this);
+        this.closeModal = this.closeModal.bind(this);
       }
       
+      closeModal() {
+        console.log("hola close");
+         this.setState ( {
+             detailsModalShow: false,
+            })
+      }
+      showDetailsModalMenu(key){
+        console.log("hola open");
+        console.log (key);
+    
+         this.setState ( {
+             detailsModalShow: true,
+            }
+         )
+         const projectsData = this.state.projectsData;
+         console.log(projectsData);
+    
+        const dataClickedProject = projectsData.find((projectData)  => 
+        {return projectData.id === parseInt(key) });
+        console.log(dataClickedProject); 
+        
+        if (dataClickedProject !== undefined){  
+          return (
+            this.setState ( {
+              detailsProjectClicked: dataClickedProject,
+            }
+         ) 
+             
+        )} 
+        
+    
+        }
+
         displayMenu(event){
           this.setState( prevState => {
             return {
