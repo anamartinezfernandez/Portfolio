@@ -17,6 +17,7 @@
       background: $primaryColor;
       padding: 10px;
       transform: translate(11%,87%);
+      animation: intro 0.8s linear;
       @media all and (min-width: 768px) {
         width: 60vw;
         height: 40vh;
@@ -74,3 +75,14 @@
       opacity: 0;
     }
   }
+
+  @keyframes intro{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+  }
+  
+  
