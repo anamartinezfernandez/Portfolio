@@ -11,7 +11,7 @@ const ModalFunctional = (props) => {
           {props.children} 
           <div className="modal__button--container modal__close">
             <button className="modal__button" onClick={props.closeModal}>X</button>
-          </div>
+            </div>
         </div>
     </div>
   );

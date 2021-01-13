@@ -3,9 +3,12 @@ import github from "../../images/github.svg";
 
 
 
+
 const ProjectDetailsModal = (props) => {
   console.log(props.detailsProjectClicked);
   const {title, description, webLink, githubLink, img } = props.detailsProjectClicked;
+
+
 
   return (
     <section className="projectDetails">
@@ -16,7 +19,7 @@ const ProjectDetailsModal = (props) => {
             title={title}/>
        </div> */}
       <p className="projectDetails__title" >{title}</p>
-      <p className="projectDetails__description" >{description}</p>
+      <p className="" >{description}</p>
       <ul className="projectDetails__links">
         <li className= "projectDetails__link" >
           <a 

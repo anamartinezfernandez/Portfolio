@@ -16,7 +16,8 @@ import { BrowserRouter } from "react-router-dom/cjs/react-router-dom.min";
         super(props);
         this.state = {
           menuDisplayed: false,
-          active: true,projectsData: Data,
+          active: true,
+          projectsData: Data,
           detailsModalShow: false,
           detailsProjectClicked: {}
         }

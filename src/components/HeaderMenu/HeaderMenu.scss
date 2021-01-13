@@ -6,34 +6,34 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 65px;
+  height: 4.063rem;
   align-items:center;
   width: 100vw;
-  height: 65px;
+  height: 4.063rem;
   position: fixed;
   top: 0;
   background-color:$primaryColor;
-  border-bottom: 2px solid white;
+  border-bottom: 0.125rem solid $color-light;
 
     @media all and (min-width: 768px) {
-      height: 70px;
+      height: 4.375rem;
     }
  
   &__link{
-    padding: 10px;
+    padding: 0.625rem;
+    color: $color-secondary;
     position: relative;
     display: block;
-    font-family: 'Poiret One', cursive;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
 
       @media all and (min-width: 768px) {
-        font-size: 18px;
+        font-size: 1.125rem;
       }
 
       @media all and (min-width:1280px){
-        font-size: 20px;
+        font-size: 1.25rem;
       }
 
       &::before{
@@ -42,7 +42,7 @@
         bottom: 0;
         left: 0;
         width: 100%;
-        height: 2px;
+        height: 0.125rem;
         background: linear-gradient(to right, #b47dcd, #e878a2, #eb85ab);
         z-index: 1;
         transform: scaleX(0);
@@ -122,31 +122,43 @@
   }
 }
 
+#burgerButton__navigator {
+  transition: all ease 1.4s;
+}
+
 .burgerButton{
   &__navigator{ 
-    width: 90%;
-    position: fixed;
-    left: 5%;
-    top: 65px;
-    z-index: 999;
-  } 
+    top: -465px;
+    transition: all ease 1.4s;
+    &--open { 
+       width: 90%;
+       position: fixed;
+       left: 5%;
+       z-index: 999;
+       top: 65px;  
+      
+     
+      } 
+  }
   &__browser{
+
     &--list{
-    list-style: none;
+   
     opacity: 0;
-    transition: opacity 0.9s ease;
-    border-top: 3px solid white;
-    z-index: 9999;
+    transition: opacity 1.8s ease-out;
+    
+    
+      &-open{
+        opacity: 2;
+        transition: opacity 2.3s ease-out ;
+        background-color: rgba(255, 228, 196, 1); 
+        border-top: 3px solid white;
+    // z-index: 9999;
     display: flex;
     flex-direction: column;
     justify-content: center;  
     align-items: center;
-    
-      &-open{
-        right: 0px;
-        opacity: 1;
-        transition: opacity 0.9s ease-out ;
-        background-color: rgba(255, 228, 196, 1); 
+    list-style: none;
           @media all and (min-width: 768px) {
             display: none;
           }
@@ -203,15 +215,15 @@
       height: 3px;
       background:white;
       display: block;
-      transition: all 0.3s ease-in-out;
+      transition: all 0.6s ease-in-out;
     }
     
     &:hover span:nth-child(1) {
-      width: 35px;
+      width: 25px;
     }
     
     &:hover span:nth-child(2) {    
-      width: 40px;
+      width: 30px;
     }
     
     &.active span:nth-child(1) {

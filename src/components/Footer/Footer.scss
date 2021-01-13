@@ -1,9 +1,9 @@
 .footer{
-  height: 8vh;
+  height: 10vh;
 	width: 100vw;
-  background-color:$primaryColor;
-  
-  border-top: 2px solid white;
+  background-color:$color-primary;
+  font-weight: bold;
+  border-top: 0.125rem solid $color-light;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -94,18 +94,18 @@ const HeaderMenu = (props) => {
 
         <div className="headerMenu__burgerButton--container">
           <div type="button" aria-label="Open-Close"  className= {props.active ? 'burgerButton__icon' : 'burgerButton__icon & active'}    onClick={props.displayMenu}>
-            <span className="burgerButton__icon--line-1 burgerButton__icon"></span>
-            <span className="burgerButton__icon--line-2 burgerButton__icon"></span>
-            <span className="burgerButton__icon--line-3 burgerButton__icon"></span>
+            <span className="burgerButton__icon--line-1 "></span>
+            <span className="burgerButton__icon--line-2 "></span>
+            <span className="burgerButton__icon--line-3 "></span>
           </div>
         </div>
       </section> 
       
 {/* Section Burger Navigator */}
 
-      <section>
-        <nav role="navigation" className= "burgerButton__navigator" >
-          <ul className={props.menuDisplayed ? 'burgerButton__browser--list & burgerButton__browser--list-open' : 'burgerButton__browser--list & display'} onClick={props.displayMenu} >
+<section>
+        <nav role="navigation" id="burgerButton__navigator" className= {props.menuDisplayed ? 'burgerButton__navigator--open ': 'burgerButton__navigator '} >
+          <ul className={props.menuDisplayed ? 'burgerButton__browser--list & burgerButton__browser--list-open' : 'burgerButton__browser--list'} onClick={props.displayMenu} >
             <li className={props.menuDisplayed ? 'burgerButton__browser--elements' : 'display'} >
                 <a href="#sobreMi" className="burgerButton__browser--link" >
                   Sobre mí
@@ -116,7 +116,7 @@ const HeaderMenu = (props) => {
                   Proyectos
                 </a>
             </li>
-            <li className={props.menuDisplayed ? 'burgerButton__browser--elements' : 'display'} >
+            <li className={props.menuDisplayed ? 'burgerButton__browser--elements': 'display' } >
             <a href="#contacto" className="burgerButton__browser--link" >
                   Contacto
                 </a>
@@ -124,6 +124,28 @@ const HeaderMenu = (props) => {
           </ul>
         </nav>  
       </section>
+
+      {/* <section>
+        <nav role="navigation" className= "burgerButton__navigator" >
+          <ul className={props.menuDisplayed ? 'burgerButton__browser--list & burgerButton__browser--list-open' : 'burgerButton__browser--list'} onClick={props.displayMenu} >
+            <li className={props.menuDisplayed ? 'burgerButton__browser--elements' : 'display'} >
+                <a href="#sobreMi" className="burgerButton__browser--link" >
+                  Sobre mí
+                </a>
+            </li>
+            <li className={props.menuDisplayed ? 'burgerButton__browser--elements' : 'display'} >
+            <a href="#proyectos" className="burgerButton__browser--link" >
+                  Proyectos
+                </a>
+            </li>
+            <li className={props.menuDisplayed ? 'burgerButton__browser--elements': 'display' } >
+            <a href="#contacto" className="burgerButton__browser--link" >
+                  Contacto
+                </a>
+            </li>
+          </ul>
+        </nav>  
+      </section> */}
     </>
   );
 };
