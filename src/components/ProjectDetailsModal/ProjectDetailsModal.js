@@ -1,24 +1,17 @@
 import React from "react";
 import github from "../../images/github.svg";
-
+import code from "../../images/monitor.svg";
 
 
 
 const ProjectDetailsModal = (props) => {
   console.log(props.detailsProjectClicked);
-  const {title, description, webLink, githubLink, img } = props.detailsProjectClicked;
+  const {title, description, webLink, githubLink } = props.detailsProjectClicked;
 
 
 
   return (
     <section className="projectDetails">
-      {/* <div className="projectDetails__img-container">
-        <img className="projectDetails__img" 
-            src={img} 
-            alt={title} 
-            title={title}/>
-       </div> */}
-      <p className="projectDetails__title" >{title}</p>
       <p className="" >{description}</p>
       <ul className="projectDetails__links">
         <li className= "projectDetails__link" >
@@ -40,10 +33,10 @@ const ProjectDetailsModal = (props) => {
               target="_blank"
               rel="noreferrer"
               title="webLink access" 
-              href={githubLink}>
+              href={webLink}>
                 <img 
                   className = "projectDetails__icon--webLink"
-                  src={github} 
+                  src={code} 
                   alt="webLink icon" />
             </a>
           </li>

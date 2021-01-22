@@ -1,6 +1,6 @@
-// import serflixImg from '../assets/images/serflix.jpg';
-// import rickAndMortyImg from '../assets/images/rickandmorty.jpg';
-// import theATeamImg from '../assets/images/theateam.jpg';
+import MontgomeryCardsImg from '../images/MontgomeryCardsImg.png';
+import ChicasDelCodingImg from "../images/ChicasdelCodingImg.png";
+import DreamSeriesImg from '../images/DreamSeriesImg.png';
 import RickMortyImg from '../images/Rick&MortyImg.png';
 
 const ProjectsData = [
@@ -11,7 +11,7 @@ const ProjectsData = [
     `Implementación de API y LocalStorage.`],
     githubLink: 'https://github.com/anamartinezfernandez/App-series-searcher',
     webLink: 'http://beta.adalab.es/App-series-searcher/',
-    img: RickMortyImg,
+    img: DreamSeriesImg,
     skills: ['HTML', 'SASS', 'JS'],
     id: 0,
   },
@@ -31,7 +31,7 @@ const ProjectsData = [
       ['Página web colaborativa de presentación y contacto.', 'Cuenta con una landing page y un formulario de contacto.', 'Diseño responsive.', 'Maquetación con HTML5 y CSS3 (SASS).'],
     githubLink: 'https://github.com/anamartinezfernandez/My-first-collaborative-webpage',
     webLink: 'http://beta.adalab.es/project-promo-k-modulo-1-team-3/',
-    img: RickMortyImg,
+    img: ChicasDelCodingImg,
     skills: ['HTML', 'CSS', 'SASS'],
     id: 2,
   },
@@ -42,7 +42,7 @@ const ProjectsData = [
     githubLink:
       'https://github.com/anamartinezfernandez/Web-App-Awesome-profile-cards',
     webLink: 'http://beta.adalab.es/project-promo-k-module-2-team-4/',
-    img: RickMortyImg,
+    img: MontgomeryCardsImg,
     skills: ['HTML', 'SASS', 'JS'],
     id: 3,
   },
