@@ -1,27 +1,31 @@
 {
   "files": {
-    "main.css": "./static/css/main.185e1f07.chunk.css",
-    "main.js": "./static/js/main.57c5bd65.chunk.js",
-    "main.js.map": "./static/js/main.57c5bd65.chunk.js.map",
+    "main.css": "./static/css/main.ab1664af.chunk.css",
+    "main.js": "./static/js/main.64fcd5f2.chunk.js",
+    "main.js.map": "./static/js/main.64fcd5f2.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.d3cabe95.js",
     "runtime-main.js.map": "./static/js/runtime-main.d3cabe95.js.map",
     "static/js/2.89bc7eda.chunk.js": "./static/js/2.89bc7eda.chunk.js",
     "static/js/2.89bc7eda.chunk.js.map": "./static/js/2.89bc7eda.chunk.js.map",
     "index.html": "./index.html",
-    "static/css/main.185e1f07.chunk.css.map": "./static/css/main.185e1f07.chunk.css.map",
+    "static/css/main.ab1664af.chunk.css.map": "./static/css/main.ab1664af.chunk.css.map",
     "static/js/2.89bc7eda.chunk.js.LICENSE.txt": "./static/js/2.89bc7eda.chunk.js.LICENSE.txt",
-    "static/media/Rick&MortyImg.6c602bf6.png": "./static/media/Rick&MortyImg.6c602bf6.png",
+    "static/media/ChicasdelCodingImg.3c594558.png": "./static/media/ChicasdelCodingImg.3c594558.png",
+    "static/media/DreamSeriesImg.a8126883.png": "./static/media/DreamSeriesImg.a8126883.png",
+    "static/media/MontgomeryCardsImg.44aa3dd4.png": "./static/media/MontgomeryCardsImg.44aa3dd4.png",
+    "static/media/Rick&MortyImg.17cd39c0.png": "./static/media/Rick&MortyImg.17cd39c0.png",
     "static/media/ana_foto_150.d1ec700e.png": "./static/media/ana_foto_150.d1ec700e.png",
     "static/media/ana_foto_250.51f40502.png": "./static/media/ana_foto_250.51f40502.png",
     "static/media/email.8053326d.svg": "./static/media/email.8053326d.svg",
     "static/media/github.e0df113a.svg": "./static/media/github.e0df113a.svg",
     "static/media/ico-arrow.3c8176d9.svg": "./static/media/ico-arrow.3c8176d9.svg",
-    "static/media/linkedin.b6350964.svg": "./static/media/linkedin.b6350964.svg"
+    "static/media/linkedin.b6350964.svg": "./static/media/linkedin.b6350964.svg",
+    "static/media/monitor.625cc726.svg": "./static/media/monitor.625cc726.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.d3cabe95.js",
     "static/js/2.89bc7eda.chunk.js",
-    "static/css/main.185e1f07.chunk.css",
-    "static/js/main.57c5bd65.chunk.js"
+    "static/css/main.ab1664af.chunk.css",
+    "static/js/main.64fcd5f2.chunk.js"
   ]
 }
